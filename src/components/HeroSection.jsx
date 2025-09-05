@@ -14,7 +14,7 @@ export const HeroSection = () =>  {
                             {" "}
                             Miguel</span>
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> 
-                            Abuabara</span>
+                            Jimenez</span>
                             {" "}
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foregroud max-2-2xl max-auto opacity-0 animate-fade-in-delay-3">
