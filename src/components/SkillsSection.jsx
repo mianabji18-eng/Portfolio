@@ -2,52 +2,32 @@ import { useState } from "react";
 import { cn } from '@/lib/utils'; 
 const skills = [
     // Core ML Programming
-    { name: "Python", level: 95, category: "programming" },
-    { name: "R", level: 85, category: "programming" },
-
-    // ML/AI Frameworks
-    { name: "TensorFlow", level: 90, category: "frameworks" },
-    { name: "PyTorch", level: 88, category: "frameworks" },
-    { name: "Scikit-learn", level: 95, category: "frameworks" },
-    { name: "Keras", level: 85, category: "frameworks" },
-    { name: "XGBoost", level: 80, category: "frameworks" },
-    { name: "Hugging Face", level: 82, category: "frameworks" },
+    { name: "Python", level: 90, category: "programming" },
+    { name: "HTML", level: 95, category: "programming" },
+    { name: "CSS", level: 95, category: "programming" },
+    { name: "React", level: 70, category: "programming" },
+    { name: "JavaScript", level: 60, category: "programming" },
+    { name: "C++", level: 90, category: "programming" },
 
     // Data Science Core
-    { name: "Pandas", level: 95, category: "data-science" },
-    { name: "NumPy", level: 92, category: "data-science" },
-    { name: "Matplotlib", level: 88, category: "data-science" },
-    { name: "Seaborn", level: 85, category: "data-science" },
+    { name: "Pandas", level: 80, category: "data-science" },
+    { name: "NumPy", level: 80, category: "data-science" },
+    { name: "Matplotlib", level: 70, category: "data-science" },
+    { name: "Seaborn", level:75, category: "data-science" },
 
     // AI Specializations
-    { name: "Computer Vision", level: 85, category: "ai" },
-    { name: "Deep Learning", level: 90, category: "ai" },
-    { name: "Neural Networks", level: 87, category: "ai" },
-    { name: "Transformers", level: 78, category: "ai" },
-    { name: "Generative AI", level: 75, category: "ai" },
-
-    // ML Techniques
-    { name: "Supervised Learning", level: 95, category: "ml-techniques" },
-    { name: "Feature Engineering", level: 90, category: "ml-techniques" },
-    { name: "Model Optimization", level: 85, category: "ml-techniques" },
-    { name: "Ensemble Methods", level: 85, category: "ml-techniques" },
-
-    // Mathematical Foundation
-    { name: "Statistics", level: 90, category: "mathematics" },
-    { name: "Linear Algebra", level: 85, category: "mathematics" },
-    { name: "Probability Theory", level: 88, category: "mathematics" },
-
-    // MLOps & Deployment
-    { name: "MLflow", level: 80, category: "mlops" },
-    { name: "Model Deployment", level: 82, category: "mlops" },
-    { name: "AWS SageMaker", level: 78, category: "mlops" },
+    { name: "Computer Vision", level: 85, category: "AI" },
+    { name: "Generative AI", level: 75, category: "AI" },
 
     // Development Tools
-    { name: "Jupyter Notebooks", level: 95, category: "tools" },
-    { name: "Google Colab", level: 90, category: "tools" }
+    { name: "Jupyter Notebooks", level: 90, category: "tools" },
+    { name: "Google Colab", level: 85, category: "tools" },
+    { name: "Google Sheets", level: 90, category: "tools" },
+    { name: "Selenium", level: 70, category: "tools" },
+    { name: "Arduino IDE", level: 70, category: "tools" }
 ];
 
-const categories = ["all", "programming", "frameworks", "data-science", "ai", "ml-techniques", "mathematics", "mlops", "tools"];
+const categories = ["all", "programming", "data-science", "AI", "tools"];
 
 export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("all");

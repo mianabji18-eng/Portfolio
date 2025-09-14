@@ -4,30 +4,30 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
     {
         id:1,
-        title: "Project 1",
-        description: "Description about the project 1",
-        image: "/projects/",
-        tags: ["Pyhton", "CoopeliaSim"],
-        demoUrl: "#",
-        GithubUrl: "#",
+        title: "Machine Learning - Classification",
+        description: "Shape and Color-Based Classification of Geometric Figures in CoppeliaSim Using Machine Learning.",
+        image: "/projects/1.png",
+        tags: ["Jupyter Notebook", "CoppeliaSim", "Python"],
+        demoUrl: "https://youtu.be/OsxDNllfUFo",
+        GithubUrl: "https://github.com/mianabji18-eng/ML_ShapesClassification.git",
     },
     {
         id:2,
-        title: "Project 2",
-        description: "Description about the project 2",
-        image: "/projects/",
-        tags: ["Html", "Css"],
-        demoUrl: "#",
-        GithubUrl: "#",
+        title: "Robotic Process Automation - RPA",
+        description: "Robotic Automation in the search for cases in the Judicial Branch.",
+        image: "/projects/2.png",
+        tags: ["Python", "Selenium", "Google Sheets", "LookerStudio"],
+        demoUrl: "https://lookerstudio.google.com/reporting/8506f35a-518b-4a06-95bd-67e9a23f426d",
+        GithubUrl: "https://github.com/mianabji18-eng/RobotJuzgado.git",
     },
     {
         id:3,
-        title: "Project 3",
-        description: "Description about the project 3",
-        image: "/projects/",
-        tags: ["Html", "Css"],
-        demoUrl: "#",
-        GithubUrl: "#",
+        title: "Local Ad Image Generator - AI",
+        description: "Create a selected product image from AI-generated images with different tools.",
+        image: "/projects/3.png",
+        tags: ["AI", "Python", "API", "Html", "Generative AI"],
+        demoUrl: "/projects/Cap.png",
+        GithubUrl: "https://github.com/mianabji18-eng/AdStudio.git",
     },
 ];
 
@@ -44,7 +44,7 @@ export const ProjectsSection = () => {
                     crafted with attention to detail, performance, and user experience.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
                     {projects.map((project,key) =>(
                         <div 
                             key={key} 
